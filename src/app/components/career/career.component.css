@@ -1,0 +1,25 @@
+#careers {
+  width: 100%;
+  min-height: 80vh;
+  background-color: #fcf3cf;
+}
+
+.title {
+  text-align: center;
+  color: #18BC9C;
+}
+.line {
+	border-top: 1px solid #80808047;
+}
+
+#careers .career{
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.carDescription{
+  overflow-wrap: break-word;
+}
+
+p {
+	font-size: 14px;
+}

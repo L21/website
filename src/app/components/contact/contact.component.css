@@ -1,0 +1,17 @@
+#contact {
+	background-color: #434242;
+}
+
+.content {
+	color: white;
+}
+
+.line {
+	border-top: 1px solid #80808047;
+}
+
+.git {
+	padding-top: 3px;
+	align-items:center;
+	justify-content:center;
+}

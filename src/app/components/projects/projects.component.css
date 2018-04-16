@@ -1,0 +1,14 @@
+#portfolio {
+  width: 100%;
+  min-height: 80vh;
+}
+
+.title {
+  text-align: center;
+  color: black;
+}
+.line {
+	border-top: 1px solid #80808047;
+}
+
+

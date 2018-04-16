@@ -1,0 +1,27 @@
+<section id="educations">
+  <div class="container">
+    <div class="row">
+      <div class="col col-xs-12 col-sm-8 col-sm-push-2">
+        <h2 class="title">Education</h2>
+        <hr class="line">
+        <div class="education row" *ngFor="let education of educations">
+          <div class="col-md-4">
+            <h4>{{ education['schoolName'] }}</h4>
+            <p class="experience-period">
+              {{ education['startDate'] }}        -
+              {{ education['endDate'] }}      </p>
+          </div>
+          <div class="col-md-8">
+            <p>
+              <strong>{{ education['degreeTitle'] }}</strong>
+              <span class="eduDescription">
+                {{ education['programDescription'] }}</span>
+              <br>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>

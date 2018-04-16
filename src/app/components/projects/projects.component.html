@@ -1,0 +1,43 @@
+<section id="portfolio">
+  <div class="container">
+    <div class="row">
+      <div class="col col-xs-12 col-sm-8 col-sm-push-2">
+        <h2 class="title">Portfolio</h2>
+        <hr class="line col col-xs-12 col-sm-8 col-sm-push-2">
+        <div class="project row ">
+  			<div class="portfolio-item col-sm-4" *ngFor="let project of projects; index as i">
+                <a href="#portfolioModal{{i}}" class="portfolio-link" data-toggle="modal">
+                    <p class="project_name">{{project.projectName}}</p>
+                    <img [src]="project.projectImgUrl" class="img-responsive" alt="">                     
+                    <p class="description">{{project.projectDescription}}</p>
+                </a>
+            
+	            <div class="portfolio-modal modal fade" id="portfolioModal{{i}}" tabindex="-1" role="dialog" aria-hidden="true">
+			        <div class="modal-content">
+			           
+			            <div class="container">
+			                <div class="row">
+			                    <div class="col-lg-8 col-lg-offset-2">
+			                        <div class="modal-body">
+			                            <h2>{{project.projectName}}</h2>
+			                            <p class="description">{{project.projectDescription}}</p>
+			                            <ul class="project_description" *ngFor="let detail of project.details">
+			                                    <li >{{detail}}</li>
+			                            </ul>
+			                            <div class="description">
+			                            	<a class="btn btn-default" href="{{project.gitLink}}">Github Link</a><button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+			                        	</div>
+			                            <br/><br/><br/>
+			                        </div>
+			                    </div>
+			                </div>
+			            </div>
+			        </div>
+	    		</div>
+	    	</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
